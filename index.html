@@ -1,90 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VELRIX</title>
+<title>VELRIX | فيلريكس</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma, Arial, sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#0f0f0f;
-    color:white;
-    text-align:center;
+background:#050505;
+color:white;
+text-align:center;
+overflow-x:hidden;
 }
 
-.hero{
-    padding:80px 20px;
+body::before{
+content:"";
+position:fixed;
+width:700px;
+height:700px;
+background:radial-gradient(circle,#ff000040,transparent 70%);
+top:-250px;
+left:50%;
+transform:translateX(-50%);
+z-index:-1;
 }
 
-h1{
-    font-size:60px;
-    margin-bottom:10px;
+.header{
+padding:50px 20px 20px;
 }
 
-p{
-    color:#bdbdbd;
-    font-size:18px;
+.logo{
+width:220px;
+max-width:80%;
+filter:drop-shadow(0 0 25px #ff0000);
 }
 
-.links{
-    max-width:500px;
-    margin:auto;
-    padding:20px;
+.title{
+font-size:48px;
+font-weight:bold;
+margin-top:15px;
+letter-spacing:2px;
+}
+
+.subtitle{
+color:#b5b5b5;
+margin-top:10px;
+font-size:18px;
+}
+
+.section{
+max-width:700px;
+margin:40px auto;
+padding:0 20px;
+}
+
+.section h2{
+margin-bottom:20px;
+font-size:28px;
+color:#ff4444;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+border-radius:20px;
+padding:25px;
+margin-bottom:20px;
+box-shadow:0 0 25px rgba(255,0,0,.12);
+}
+
+.song-title{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.song-desc{
+color:#aaa;
 }
 
 .btn{
-    display:block;
-    background:#1f1f1f;
-    color:white;
-    text-decoration:none;
-    padding:18px;
-    margin:12px 0;
-    border-radius:15px;
-    transition:.3s;
+display:block;
+text-decoration:none;
+background:#161616;
+color:white;
+padding:18px;
+margin:12px 0;
+border-radius:15px;
+font-size:18px;
+transition:.3s;
+border:1px solid #2a2a2a;
 }
 
 .btn:hover{
-    background:#2f2f2f;
+transform:translateY(-3px);
+background:#202020;
+box-shadow:0 0 20px rgba(255,0,0,.35);
 }
 
-footer{
-    margin-top:50px;
-    padding:20px;
-    color:#777;
+.footer{
+padding:40px 20px;
+color:#777;
+font-size:14px;
 }
+
 </style>
-
 </head>
+
 <body>
 
-<div class="hero">
-    <h1>VELRIX</h1>
-    <p>Official Music Project</p>
+<div class="header">
+
+<img src="logo.png.png" class="logo">
+
+<div class="title">VELRIX</div>
+
+<div class="subtitle">
+مشروع موسيقي يتجاوز الحدود
 </div>
-
-<div class="links">
-
-    <a class="btn" href="#">🎵 Spotify</a>
-
-    <a class="btn" href="#">▶️ YouTube Music</a>
-
-    <a class="btn" href="#">🍎 Apple Music</a>
-
-    <a class="btn" href="#">🎧 Anghami</a>
-
-    <a class="btn" href="#">🎵 TikTok</a>
-
-    <a class="btn" href="#">📸 Instagram</a>
-
-    <a class="btn" href="#">📺 YouTube</a>
 
 </div>
 
-<footer>
-© 2026 VELRIX
-</footer>
+<div class="section">
+
+<h2>🎵 استمع وتابع</h2>
+
+<a class="btn" href="https://www.youtube.com/@VELRIXMusic-m7h" target="_blank">
+📺 قناة يوتيوب
+</a>
+
+<a class="btn" href="https://www.tiktok.com/@velrixmusic" target="_blank">
+🎵 تيك توك
+</a>
+
+<a class="btn" href="https://www.instagram.com/velrixmusic/" target="_blank">
+📸 إنستغرام
+</a>
+
+</div>
+
+<div class="section">
+
+<h2>🔥 أحدث إصدار</h2>
+
+<div class="card">
+
+<div class="song-title">
+أتذكر؟
+</div>
+
+<div class="song-desc">
+أحدث أعمال VELRIX الموسيقية
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 VELRIX — BEYOND LIMITS
+</div>
 
 </body>
 </html>
