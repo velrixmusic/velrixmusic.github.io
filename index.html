@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>VELRIX | فيلريكس</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
@@ -18,126 +20,133 @@ font-family:'Cairo',sans-serif;
 
 body{
 background:#050505;
-color:#fff;
+color:white;
 overflow-x:hidden;
 }
 
 body::before{
-content:'';
+content:"";
 position:fixed;
 top:-300px;
 left:50%;
 transform:translateX(-50%);
-width:900px;
-height:900px;
-background:radial-gradient(circle,rgba(255,0,0,.25),transparent 70%);
+width:1000px;
+height:1000px;
+background:radial-gradient(circle,rgba(255,0,0,.18),transparent 70%);
 z-index:-1;
 }
 
 .container{
-max-width:900px;
+max-width:1200px;
 margin:auto;
 padding:20px;
 }
 
 .header{
 text-align:center;
-padding:40px 0;
+padding:50px 20px;
 }
 
 .logo{
-width:260px;
+width:280px;
 max-width:90%;
-filter:drop-shadow(0 0 30px rgba(255,0,0,.8));
+filter:drop-shadow(0 0 30px rgba(255,0,0,.9));
 }
 
 .brand{
-font-size:58px;
+font-size:60px;
 font-weight:900;
 letter-spacing:4px;
-margin-top:10px;
+margin-top:15px;
 }
 
 .slogan{
-color:#b8b8b8;
-font-size:18px;
+color:#c0c0c0;
 margin-top:10px;
+font-size:18px;
 }
 
 .hero{
-background:linear-gradient(135deg,#121212,#1a0000);
+background:linear-gradient(145deg,#111,#1a0000);
 border:1px solid #2a2a2a;
 border-radius:25px;
 padding:35px;
 text-align:center;
-margin-top:25px;
-box-shadow:0 0 30px rgba(255,0,0,.15);
+box-shadow:0 0 25px rgba(255,0,0,.15);
 }
 
 .hero h2{
-font-size:32px;
+font-size:34px;
 margin-bottom:10px;
 }
 
 .hero p{
 color:#bdbdbd;
-line-height:1.8;
+line-height:1.9;
 }
 
 .section-title{
 text-align:center;
-font-size:30px;
-margin:50px 0 25px;
+font-size:32px;
 color:#ff4d4d;
+margin:50px 0 25px;
 }
 
-.card{
-background:#111;
-border:1px solid #252525;
-border-radius:20px;
-padding:25px;
-margin-bottom:20px;
-box-shadow:0 0 20px rgba(255,0,0,.08);
-}
-
-.song-name{
-font-size:28px;
-font-weight:700;
-margin-bottom:10px;
-}
-
-.song-desc{
-color:#b5b5b5;
-}
-
-.links{
+.links-grid{
 display:grid;
-grid-template-columns:1fr;
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
 }
 
-.btn{
-display:block;
-text-decoration:none;
-padding:18px;
-border-radius:16px;
-background:#151515;
+.platform-card{
+background:linear-gradient(145deg,#1b1b1b,#0b0b0b);
 border:1px solid #2d2d2d;
+border-radius:22px;
+padding:25px;
+
+text-decoration:none;
 color:white;
-font-size:18px;
-font-weight:600;
-transition:.3s;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+min-height:180px;
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.6),
+0 0 15px rgba(255,0,0,.08);
+
+transition:.35s ease;
 }
 
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 0 25px rgba(255,0,0,.35);
-background:#1d1d1d;
+.platform-card:hover{
+transform:translateY(-8px);
+box-shadow:
+0 18px 35px rgba(255,0,0,.25),
+0 0 30px rgba(255,0,0,.20);
+}
+
+.platform-card:active{
+transform:translateY(2px);
+}
+
+.platform-card img{
+width:60px;
+height:60px;
+margin-bottom:15px;
+}
+
+.platform-card span{
+font-size:18px;
+font-weight:700;
+text-align:center;
 }
 
 .footer{
 text-align:center;
-padding:40px 0;
+padding:50px 20px;
 color:#888;
 font-size:14px;
 }
@@ -153,7 +162,16 @@ font-size:26px;
 }
 
 .section-title{
-font-size:24px;
+font-size:26px;
+}
+
+.platform-card{
+min-height:150px;
+}
+
+.platform-card img{
+width:50px;
+height:50px;
 }
 
 }
@@ -167,7 +185,7 @@ font-size:24px;
 
 <div class="header">
 
-<img src="logo.png.png" class="logo" alt="VELRIX">
+<img src="logo.png.png" class="logo" alt="VELRIX Logo">
 
 <div class="brand">VELRIX</div>
 
@@ -182,64 +200,86 @@ BEYOND LIMITS
 <h2>🎵 مرحباً بك في عالم VELRIX</h2>
 
 <p>
-منصة موسيقية مستقلة تقدم الأغاني الأصلية والقصص العاطفية والتجارب الموسيقية الحديثة.
-استمع إلى أعمال VELRIX عبر جميع المنصات الموسيقية العالمية.
+استمع إلى جميع أعمال VELRIX الموسيقية من مكان واحد،
+وتابع أحدث الإصدارات والحسابات الرسمية على المنصات العالمية.
 </p>
 
 </div>
 
-<h2 class="section-title">🔥 أحدث إصدار</h2>
+<h2 class="section-title">🎧 المنصات الموسيقية</h2>
 
-<div class="card">
+<div class="links-grid">
 
-<div class="song-name">أتذكر؟</div>
+<a class="platform-card" href="https://open.spotify.com/intl-ar/artist/2EPyaWMIRtimimjLT8jp0F" target="_blank">
+<img src="https://cdn.simpleicons.org/spotify/1DB954">
+<span>Spotify</span>
+</a>
 
-<div class="song-desc">
-أحدث أعمال VELRIX الموسيقية المتوفرة الآن على المنصات الموسيقية.
+<a class="platform-card" href="https://music.youtube.com/channel/UCjUpPlsZ9SbqV0V7jZM_vaA" target="_blank">
+<img src="https://cdn.simpleicons.org/youtube/FF0000">
+<span>YouTube Music</span>
+</a>
+
+<a class="platform-card" href="https://music.apple.com/tr/artist/velrix/6775902679" target="_blank">
+<img src="https://cdn.simpleicons.org/apple/FFFFFF">
+<span>Apple Music</span>
+</a>
+
+<a class="platform-card" href="https://music.amazon.com/artists/B0FJ3LZZ4B/velrix" target="_blank">
+<img src="https://cdn.simpleicons.org/amazon/FF9900">
+<span>Amazon Music</span>
+</a>
+
+<a class="platform-card" href="https://www.deezer.com/ar/artist/336686321" target="_blank">
+<img src="https://cdn.simpleicons.org/deezer/A238FF">
+<span>Deezer</span>
+</a>
+
+<a class="platform-card" href="https://tidal.com/artist/63916274" target="_blank">
+<img src="https://cdn.simpleicons.org/tidal/FFFFFF">
+<span>TIDAL</span>
+</a>
+
+<a class="platform-card" href="https://audiomack.com/velrix-6a203f4aa0d36" target="_blank">
+<img src="https://cdn.simpleicons.org/audiomack/FFA200">
+<span>Audiomack</span>
+</a>
+
 </div>
 
-</div>
+<h2 class="section-title">📱 الحسابات الرسمية</h2>
 
-<h2 class="section-title">🎧 استمع على المنصات</h2>
+<div class="links-grid">
 
-<div class="links">
+<a class="platform-card" href="https://www.youtube.com/@VELRIXMusic-m7h" target="_blank">
+<img src="https://cdn.simpleicons.org/youtube/FF0000">
+<span>YouTube</span>
+</a>
 
-<a class="btn" href="https://open.spotify.com/intl-ar/artist/2EPyaWMIRtimimjLT8jp0F" target="_blank">🎵 Spotify</a>
+<a class="platform-card" href="https://www.tiktok.com/@velrixmusic" target="_blank">
+<img src="https://cdn.simpleicons.org/tiktok/FFFFFF">
+<span>TikTok</span>
+</a>
 
-<a class="btn" href="https://music.youtube.com/channel/UCjUpPlsZ9SbqV0V7jZM_vaA" target="_blank">▶️ YouTube Music</a>
+<a class="platform-card" href="https://www.instagram.com/velrixmusic/" target="_blank">
+<img src="https://cdn.simpleicons.org/instagram/E4405F">
+<span>Instagram</span>
+</a>
 
-<a class="btn" href="https://music.apple.com/tr/artist/velrix/6775902679" target="_blank">🍎 Apple Music</a>
+<a class="platform-card" href="https://x.com/velrixmusic" target="_blank">
+<img src="https://cdn.simpleicons.org/x/FFFFFF">
+<span>X</span>
+</a>
 
-<a class="btn" href="https://music.amazon.com/artists/B0FJ3LZZ4B/velrix" target="_blank">📦 Amazon Music</a>
-
-<a class="btn" href="https://www.deezer.com/ar/artist/336686321" target="_blank">🎧 Deezer</a>
-
-<a class="btn" href="https://tidal.com/artist/63916274" target="_blank">🌊 TIDAL</a>
-
-<a class="btn" href="https://audiomack.com/velrix-6a203f4aa0d36" target="_blank">🎶 Audiomack</a>
-
-</div>
-
-<h2 class="section-title">📱 تابع VELRIX</h2>
-
-<div class="links">
-
-<a class="btn" href="https://www.youtube.com/@VELRIXMusic-m7h" target="_blank">📺 YouTube</a>
-
-<a class="btn" href="https://www.tiktok.com/@velrixmusic" target="_blank">🎵 TikTok</a>
-
-<a class="btn" href="https://www.instagram.com/velrixmusic/" target="_blank">📸 Instagram</a>
-
-<a class="btn" href="https://www.facebook.com/velrixmusic/" target="_blank">📘 Facebook</a>
-
-<a class="btn" href="https://x.com/velrixmusic" target="_blank">𝕏 X (Twitter)</a>
+<a class="platform-card" href="https://www.facebook.com/velrixmusic/" target="_blank">
+<img src="https://cdn.simpleicons.org/facebook/1877F2">
+<span>Facebook</span>
+</a>
 
 </div>
 
 <div class="footer">
-
-© 2026 VELRIX — جميع الحقوق محفوظة
-
+© 2026 VELRIX — BEYOND LIMITS
 </div>
 
 </div>
